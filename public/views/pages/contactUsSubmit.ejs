@@ -1,0 +1,14 @@
+<% include ../partials/head %>
+
+	<% include ../partials/header %>
+	<div id="content">
+			<% include ../partials/menu %>
+			<%if(isSuccess == true){ %>
+				<h1> Thanks <%=contact.fname%> for contacting us. </h1>
+			<% } else{ %> 
+				<h1> Thanks <%=contact.fname%> for contacting us. </h1>
+				<h2>Sadly, there was an error. Please try again.</h2>
+				<% }%> 
+			</div>
+
+			<% include ../partials/footer %>
