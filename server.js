@@ -58,6 +58,11 @@ app.get('/vacation', function (req, res) {
     res.render('pages/vacation', { menu: pageMenu });
 });
 
+app.get('/orlando', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/orlando', { menu: pageMenu });
+});
+
 app.post('/contactUsSubmit', function (req, res) {
     let contact = {
         fname: req.body.firstname,
