@@ -62,6 +62,27 @@ app.get('/orlando', function (req, res) {
     let pageMenu = getPageMenu("vacation");
     res.render('pages/orlando', { menu: pageMenu });
 });
+app.get('/cancun', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/cancun', { menu: pageMenu });
+});
+app.get('/hawaii', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/hawaii', { menu: pageMenu });
+});
+app.get('/italy', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/italy', { menu: pageMenu });
+});
+app.get('/karachi', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/karachi', { menu: pageMenu });
+});
+app.get('/maine', function (req, res) {
+    let pageMenu = getPageMenu("vacation");
+    res.render('pages/maine', { menu: pageMenu });
+});
+
 
 app.post('/contactUsSubmit', function (req, res) {
     let contact = {
