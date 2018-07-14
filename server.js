@@ -86,8 +86,8 @@ app.get('/maine', function (req, res) {
 
 app.post('/contactUsSubmit', function (req, res) {
     let contact = {
-        fname: req.body.firstname,
-        lname: req.body.lastname,
+        fname: req.body.firstName,
+        lname: req.body.lastName,
         familyMember: req.body.familyMember,
         message: req.body.message
     }

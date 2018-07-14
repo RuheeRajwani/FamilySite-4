@@ -1,11 +1,11 @@
 <% include ../partials/head %>
 
 	<% include ../partials/header %>
-	<div id="content">
+		<div id="content">
 			<% include ../partials/menu %>
-			
-			<h1>Contact Us</h1>
-			<div id="form">
+
+				<h1>Contact Us</h1>
+				<!-- <div id="form">
 				<form action="/contactUsSubmit" method="POST">
 					<label for="fname">First Name*</label>
 					<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -25,6 +25,43 @@
 						<input type="submit" value="Submit">
 					</div>
 				</form>
-			</div>
+			</div> -->
 
-			<% include ../partials/footer %>
+				<form action="/contactUsSubmit" method="POST">
+					<div class="container">
+						<div class="form-group form-row">
+								<label class="col-lg-2 col-md-12 col-form-label text-left" for="firstName">First Name:</label>
+								<div class="col-lg-10 col-md-12">
+									<input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter first name" required="true">
+								</div>
+							</div>
+							<div class="form-group form-row">
+								<label class="col-lg-2 col-md-12 col-form-label text-left" for="lastName">Last Name:</label>
+								<div class="col-lg-10 col-md-12">
+								<input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter last name" required="true">
+							</div>
+						</div>
+						<div class="form-group form-row">
+								<label class="col-lg-2 col-md-12 col-form-label text-left" for="familyMember">Family Member:</label>
+								<div class="col-lg-10 col-md-12">
+								<select class="form-control" id="familyMember" name="familyMember" required="true">
+									<option>Asif</option>
+									<option>Laila</option>
+									<option>Ahil</option>
+									<option>Ruhee</option>
+								</select>
+							</div>
+						</div>
+							<div class="form-group form-row">
+								<label class="col-lg-2 col-md-12 col-form-label text-left" for="message">Message:</label>
+								<div class="col-lg-10 col-md-12">
+								<textarea class="form-control" rows="5" name="message" id="message" required="true"></textarea>
+							</div>
+						</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="reset" value="Reset" class="btn btn-secondary">Reset</button>
+						</div>
+				</form>
+				</div>
+				
+				<% include ../partials/footer %>
