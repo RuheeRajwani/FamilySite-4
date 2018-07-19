@@ -5,45 +5,25 @@
 			<% include ../partials/menu %>
 
 				<h1>Contact Us</h1>
-				<!-- <div id="form">
-				<form action="/contactUsSubmit" method="POST">
-					<label for="fname">First Name*</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-					<label for="lname">Last Name*</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-					<label for="familyMember">Family Member</label>
-					<select id="familyMember" name="familyMember">
-						<option value="asif">Asif</option>
-						<option value="ahil">Ahil</option>
-						<option value="laila">Laila</option>
-						<option value="ruhee">Ruhee</option>
-					</select>
-					<label for="message">Message*</label>
-					<textarea rows="4" cols="50" id="message" name="message" placeholder="Your message..." required></textarea>
-					<div class="formButton">
-						<input type="reset" value="Reset">
-						<input type="submit" value="Submit">
-					</div>
-				</form>
-			</div> -->
+
 
 				<form action="/contactUsSubmit" method="POST">
 					<div class="container">
 						<div class="form-group form-row">
-								<label class="col-lg-2 col-md-12 col-form-label text-left" for="firstName">First Name:</label>
-								<div class="col-lg-10 col-md-12">
-									<input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter first name" required="true">
-								</div>
+							<label class="col-lg-2 col-md-12 col-form-label text-left" for="firstName">First Name:</label>
+							<div class="col-lg-10 col-md-12">
+								<input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter first name" required="true">
 							</div>
-							<div class="form-group form-row">
-								<label class="col-lg-2 col-md-12 col-form-label text-left" for="lastName">Last Name:</label>
-								<div class="col-lg-10 col-md-12">
+						</div>
+						<div class="form-group form-row">
+							<label class="col-lg-2 col-md-12 col-form-label text-left" for="lastName">Last Name:</label>
+							<div class="col-lg-10 col-md-12">
 								<input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter last name" required="true">
 							</div>
 						</div>
 						<div class="form-group form-row">
-								<label class="col-lg-2 col-md-12 col-form-label text-left" for="familyMember">Family Member:</label>
-								<div class="col-lg-10 col-md-12">
+							<label class="col-lg-2 col-md-12 col-form-label text-left" for="familyMember">Family Member:</label>
+							<div class="col-lg-10 col-md-12">
 								<select class="form-control" id="familyMember" name="familyMember" required="true">
 									<option>Asif</option>
 									<option>Laila</option>
@@ -52,16 +32,23 @@
 								</select>
 							</div>
 						</div>
-							<div class="form-group form-row">
-								<label class="col-lg-2 col-md-12 col-form-label text-left" for="message">Message:</label>
-								<div class="col-lg-10 col-md-12">
+						<div class="form-group form-row">
+							<label class="col-lg-2 col-md-12 col-form-label text-left" for="message">Message:</label>
+							<div class="col-lg-10 col-md-12">
 								<textarea class="form-control" rows="5" name="message" id="message" required="true"></textarea>
 							</div>
 						</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
-							<button type="reset" value="Reset" class="btn btn-secondary">Reset</button>
+						<div class="form-group form-row justify-content-end">
+							<div class="col-lg-2 col-md-3 col-sm-12">
+								<button type="submit" class="btn btn-primary">Submit</button>
+								&nbsp;
+
+								<button type="reset" value="Reset" class="btn btn-secondary">Reset</button>
+								
+							</div>
 						</div>
+
 				</form>
-				</div>
-				
+
+
 				<% include ../partials/footer %>

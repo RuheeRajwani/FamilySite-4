@@ -5,17 +5,18 @@ body {
 	font-size:7;
 }
 
-nav{
+.nav-color{
 color:#DDDDE6;
-background-color:#000080;
-
+background-color:#29487d;
 }
+
+
 div#content {
 	text-align:center;
-	margin-right: 25px;
+	margin-right: 10px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	margin-left: 25px; 
+	margin-left: 10px; 
 	color:#000080;
 	font-size:large;
 }
@@ -42,14 +43,17 @@ header img#headerImage {
 }
 
 footer {
-	background-color: #000080;
+	background-color: #29487d;
 	font-size: small;
 	color: white;
 	text-align:right;
 	font-style:italic;
-	margin: 0px;
+	
 	list-style-type: none;
-	padding: 0px;
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
 	text-align: right;	
 }
 .topnav {
