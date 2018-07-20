@@ -18,8 +18,7 @@ Changes from version 2:
     npm i -g mongoui
   
 Changes from version 4:
-1. Intergrated Bootstrap into the design of the website
-
+1. Integrated bootstrap for Navigation, Layout etc.
 
 To run do the following:
 1. npm install
