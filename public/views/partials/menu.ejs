@@ -1,6 +1,6 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark nav-color">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/" id="home">
       <img src="images/navbarBrand.png" width="50" height="50" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -11,28 +11,34 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="/asif">Asif </a>
+          <a class="nav-link" id="asif" href="/asif">Asif </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/laila">Laila</a>
+          <a class="nav-link" id="laila" href="/laila">Laila</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/ahil">Ahil</a>
+          <a class="nav-link" id="ahil" href="/ahil">Ahil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/ruhee">Ruhee</a>
+          <a class="nav-link" id="ruhee" href="/ruhee">Ruhee</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/grandparents">Grandparents</a>
+          <a class="nav-link" id="grandparents" href="/grandparents" id="grandparents">Grandparents</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/vacation">Vacation</a>
+          <a class="nav-link" id="vacation"href="/vacation">Vacation</a>
+          
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/contactUs">Contact Us</a>
+          <a class="nav-link" href="/contactUs" id="contactUs">Contact Us</a>
         </li>
       </ul>
 
   </nav>
+
+  <script>
+    console.log("<%=menu.selectedMenu%>")
+    $("#<%=menu.selectedMenu%>").addClass("active");
+  </script>
